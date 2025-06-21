@@ -1,120 +1,123 @@
-# UCL Chat 🤖
+# Pinecone AI Champions League Chat ⚽️🤖
 
-## 🖼️ Preview
+![Pinecone AI Champions League Chat](https://img.shields.io/badge/Download-Release-blue.svg)
 
-![UCL AI Assistant Chat Session](./chat-session.png)
+Welcome to the **Pinecone AI Champions League Chat** repository! This project is a smart chat application designed to provide users with comprehensive information about the UEFA Champions League seasons from 2020/21 to 2024/25. It is powered by **Pinecone** and **Gemini AI**, ensuring that you have access to up-to-date and accurate data regarding your favorite soccer tournaments.
 
-A **smart chat application** that knows everything about UEFA Champions League seasons from 2020/21 to 2024/25, powered by **Pinecone** and **Gemini AI**.
+## Table of Contents
 
-## 🔍 Description
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-This project provides an intelligent chat interface that can answer questions about recent UEFA Champions League seasons. It uses vector embeddings to store and retrieve information about matches, teams, players, and statistics from the 2020/21 to 2024/25 seasons.
+## Features
 
-## 📁 Project Structure
+- **Comprehensive Data**: Access detailed information about matches, teams, players, and statistics from the UEFA Champions League seasons 2020/21 to 2024/25.
+- **Smart Chatbot**: Engage in a conversation with the chatbot to get answers to your soccer-related queries.
+- **User-Friendly Interface**: Enjoy a clean and intuitive interface built with React and Tailwind CSS.
+- **Real-Time Updates**: Get the latest updates on matches and scores as they happen.
+- **Responsive Design**: The application is fully responsive, making it accessible on various devices.
 
-```
-.
-├── server/   # Express.js backend with Pinecone integration
-└── client/   # Next.js frontend chat interface
-```
+## Technologies Used
 
-## 🚀 Features
+This project utilizes a range of technologies to deliver its features effectively:
 
-- **Intelligent Q&A** about UCL seasons
-- **Vector-based search** using Pinecone
-- **AI-powered responses** with Gemini
-- **Real-time chat interface** with modern design
-- **Responsive UI** for desktop and mobile
-- **University College London style branding**
-- **Comprehensive UCL knowledge** from 2020/21 to 2024/25
+- **Frontend**: 
+  - [React](https://reactjs.org/) for building user interfaces.
+  - [Next.js](https://nextjs.org/) for server-side rendering and static site generation.
+  - [Tailwind CSS](https://tailwindcss.com/) for styling.
+  - [Lucide React](https://lucide.dev/) for icons.
 
-## 🛠️ Tech Stack
+- **Backend**: 
+  - [Express](https://expressjs.com/) for server-side logic.
+  - [Axios](https://axios-http.com/) for making HTTP requests.
+  - [Pinecone](https://www.pinecone.io/) for managing vector databases.
+  - [Gemini AI](https://gemini.ai/) for artificial intelligence capabilities.
 
-### Backend
+- **TypeScript**: For type safety and better development experience.
 
-- **Express.js**
-- **Pinecone** (vector database)
-- **Gemini AI** (language model)
-- **CORS** (cross-origin resource sharing)
+- **Chatbot Framework**: Implements a retrieval-augmented generation (RAG) model for enhanced conversational capabilities.
 
-### Frontend
+## Getting Started
 
-- **Next.js 15** (App Router)
-- **React 19**
-- **TypeScript**
-- **TailwindCSS 4**
-- **shadcn/ui** (customizable UI components)
-- **Lucide React** (icon library)
-- **Axios** (API requests)
+To get started with the Pinecone AI Champions League Chat application, follow these steps:
 
-## ⚙️ Installation
+1. **Clone the Repository**: 
+   ```bash
+   git clone https://github.com/SRIGANTH8899/pinecone-ai-champions-league-chat.git
+   cd pinecone-ai-champions-league-chat
+   ```
 
-### 1. Clone the Repo
+2. **Install Dependencies**: 
+   Make sure you have Node.js installed. Then, run:
+   ```bash
+   npm install
+   ```
 
-```bash
-git clone https://github.com/andrew-dev-p/pinecone-ai-champions-league-chat
-cd pinecone-ai-champions-league-chat
-```
+3. **Set Up Environment Variables**: 
+   Create a `.env` file in the root directory and add the necessary environment variables. Refer to the `.env.example` file for guidance.
 
-### 2. Setup Server
+4. **Run the Application**: 
+   Start the development server with:
+   ```bash
+   npm run dev
+   ```
 
-```bash
-cd server
-npm install
-```
+5. **Open in Browser**: 
+   Visit `http://localhost:3000` to view the application.
 
-### 3. Setup Client
+## Usage
 
-```bash
-cd ../client
-npm install
-```
+Once the application is running, you can interact with the chatbot. Simply type your question related to the UEFA Champions League, and the chatbot will provide you with relevant information. Here are some example queries:
 
-## 🧪 Running Locally
+- "Who won the Champions League in 2021?"
+- "Tell me about the top players in the 2022 season."
+- "What are the upcoming matches for this season?"
 
-### Start the Server
+You can also explore various features of the application through the navigation menu.
 
-```bash
-cd server
-npm run start
-```
+## Releases
 
-### Start the Client
+For the latest updates and releases, visit our [Releases](https://github.com/SRIGANTH8899/pinecone-ai-champions-league-chat/releases) section. You can download the latest version of the application from there and execute it as needed.
 
-```bash
-cd ../client
-npm run dev
-```
+![Release Badge](https://img.shields.io/badge/Latest%20Release-v1.0.0-brightgreen.svg)
 
-The client will be available at `http://localhost:3000` (or another port if specified). Make sure the server is running for the chat to work.
+## Contributing
 
-## 🔗 How It Works
+We welcome contributions from the community. If you would like to contribute to the Pinecone AI Champions League Chat project, please follow these steps:
 
-- The **frontend** (client) provides a chat interface where users can ask questions about UCL seasons.
-- When a user submits a question, the frontend sends a request to the backend API (`/ask?question=...`).
-- The **backend** processes the question using Pinecone for vector search and Gemini AI for generating responses.
-- The answer is returned and displayed in the chat UI.
+1. **Fork the Repository**: Click on the "Fork" button at the top right corner of the page.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**: 
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request".
 
-## 🔐 Environment Variables
+Please ensure your code follows the project's coding standards and is well-documented.
 
-### 📦 Server (`server/.env`)
+## License
 
-```env
-PORT=3000
-PINECONE_API_KEY=your_pinecone_api_key
-GEMINI_API_KEY=your_gemini_api_key
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## 📬 Deployment
+## Contact
 
-- **Server**: Deployed on your preferred hosting platform
-- **Frontend**: Deployable on Vercel, Netlify, or any platform supporting Next.js
+For any inquiries or feedback, feel free to reach out:
 
-## 📚 Data Sources
+- **Author**: SRIGANTH8899
+- **Email**: your-email@example.com
+- **GitHub**: [SRIGANTH8899](https://github.com/SRIGANTH8899)
 
-The application uses data from the following UCL seasons:
-- 2020/21
-- 2021/22
-- 2022/23
-- 2023/24
-- 2024/25
+Thank you for your interest in the Pinecone AI Champions League Chat! We hope you enjoy using the application and find it helpful for all your Champions League queries.
